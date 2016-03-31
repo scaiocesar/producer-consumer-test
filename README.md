@@ -25,7 +25,7 @@ To test the application using the endpoint, POST a message with a _text/plain_ p
 I recommend using Advanced Rest Client, a plugin for Google Chrome to POST messages.
 
 #Challenge 1
-Transfer the message using Oracle Service Bus. For that, you will need to send evidence and the configuration instructions
+Transfer the message using a ESB software available on the Market, like Mule, Oracle Service Bus, IBM Integration Bus, Apache Camel, etc. For that, you will need to send evidence and the configuration instructions
 so we can replicate the solution.
 
 #Challenge 2

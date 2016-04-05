@@ -8,7 +8,7 @@ There are two projects:
 
 ## Details
 The method to transfer the message from the Producer should be via JMS. It must be implemented on the com.cinq.rh.jms.Client class.
-The way the Consumer receives is up to you: it can be JMS, REST, SOAP. It must be implemented on the com.cinq.rh.jms.Service class. The transfer the message, you must use a third-party software, like an ESB stack, Application Server or a queue manager.
+The way the Consumer receives is up to you: it can be JMS, REST, SOAP. It must be implemented on the com.cinq.rh.jms.Service class. The transfer the message, you must use a third-party software, like an ESB stack, Application Server or a queue manager. The intention is to simulate an environment were the middleware can be scabalble without interfering in the application. 
 
 The Producer application is implemented with Spring-boot and is self-contained. To run, just use:
 
@@ -22,11 +22,13 @@ To test the application using the endpoint, POST a message with a _text/plain_ p
 
     http://localhost:8080/greet/send
 
-I recommend using Advanced Rest Client, a plugin for Google Chrome to POST messages.
+I recommend using a plugin for Google Chrome to POST messages, like Postman or Advanced Rest Client.
 
 #Challenge 1
-Transfer the message using Oracle Service Bus. For that, you will need to send evidence and the configuration instructions
-so we can replicate the solution.
+Transfer the message using a ESB software available on the Market, like Mule, Oracle Service Bus, IBM Integration Bus, Apache Camel, etc. For that, you will need to send evidence and the configuration instructions so we can replicate the solution. If you take this challenge, the Middleware must run in another container, i.e., like in the diagram below.
+
+
+[Ideal Application](IdealApplicatio.jpg)
 
 #Challenge 2
 Implement a neat page to send messages

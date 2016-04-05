@@ -28,7 +28,7 @@ I recommend using a plugin for Google Chrome to POST messages, like Postman or A
 Transfer the message using a ESB software available on the Market, like Mule, Oracle Service Bus, IBM Integration Bus, Apache Camel, etc. For that, you will need to send evidence and the configuration instructions so we can replicate the solution. If you take this challenge, the Middleware must run in another container, i.e., like in the diagram below.
 
 
-[Ideal Application](IdealApplicatio.jpg)
+![Ideal Application](https://github.com/cinqtechnologies/producer-consumer-test/blob/master/IdealApplication.jpg?raw=true)
 
 #Challenge 2
 Implement a neat page to send messages
